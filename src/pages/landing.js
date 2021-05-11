@@ -1,4 +1,6 @@
 import logo from './../images/logo.svg';
+import React from 'react';
+import ReactDOM from 'react-dom';
 
 
 function Home() {
@@ -7,7 +9,7 @@ function Home() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Max's <code>React</code> Website
+          Max Ferney's <code>React</code> Website
         </p>
         <p>Currently Under Construction...</p>
         <a
