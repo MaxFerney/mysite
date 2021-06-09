@@ -15,11 +15,14 @@ import {
     useLocation,
     withRouter} from "react-router-dom";
 import { createBrowserHistory } from "history";
-const customHistory = createBrowserHistory();
+
 
 //Pages
 import Home from './pages/landing.js';
 import ErrorPage from './pages/errorPage.js';
+
+//global vars and important stuff
+const customHistory = createBrowserHistory();
 
 function App() {
     return (
