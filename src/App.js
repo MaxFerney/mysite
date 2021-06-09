@@ -1,6 +1,7 @@
 // import logo from './logo.svg';
 import './App.scss';
-import Home from './pages/landing.js';
+
+//Modules
 import React from 'react';
 import ReactDOM from 'react-dom';
 import {
@@ -13,10 +14,13 @@ import {
     useHistory,
     useLocation,
     withRouter} from "react-router-dom";
-
-//IMPORT REACT ROUTER DOM NEXT BISH
 import { createBrowserHistory } from "history";
 const customHistory = createBrowserHistory();
+
+//Pages
+import Home from './pages/landing.js';
+import ErrorPage from './pages/errorPage.js';
+
 function App() {
     return (
         <Router history={customHistory}>
@@ -25,6 +29,9 @@ function App() {
                     path="/"
                     exact>
                     <Home/>
+                </Route>
+                <Route>
+                    <ErrorPage/>
                 </Route>
             </Switch>
         </Router>
